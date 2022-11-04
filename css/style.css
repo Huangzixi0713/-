@@ -839,12 +839,12 @@ nav .on a {
 .zuixinlist ul li p {
     padding: 10px 10px;
     font-size: 14px;
+    height: 50px;
 }
 
 .zuixinlist ul li div {
     height: 50px;
-    padding: 10px 10px;
-    background: url(./img/listbg.jpg) no-repeat 0px 45px;
+    background: url(./img/listbg.jpg) no-repeat 0px 32px;
 }
 
 .zuixinlist ul li div .xin {
