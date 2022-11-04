@@ -707,3 +707,172 @@
     display: block;
     margin-top: 60px;
 }
+
+.wrap {
+    width: 1000px;
+    min-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.tiyan-top h1 {
+    text-align: center;
+    padding: 34px 0 30px;
+    font-size: 40px;
+}
+
+.tiyan-nav {
+    text-align: center;
+    line-height: 1.7;
+    font-size: 0;
+}
+
+.tiyan-nav a.on {
+    color: #fe5431;
+    border-bottom: 4px #fe5431 solid;
+    padding-bottom: 8px;
+}
+
+.tiyan-nav a {
+    display: inline-block;
+    padding-bottom: 12px;
+    width: 165px;
+    font-size: 18px;
+}
+
+.baogao-box {
+    background: #f7f7f7;
+    padding-top: 30px;
+}
+
+.baogaoleft {
+    width: 700px;
+}
+
+.baogaoleft li {
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #e6e9e9;
+    margin-bottom: 15px;
+    overflow: hidden;
+
+}
+
+.baogaoleft li a {
+    display: block;
+}
+
+.baogaoleft li .btm {
+    font-size: 13px;
+    padding: 16px 0 11px;
+}
+
+.baogaoleft li .info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 22px;
+    background: rgba(255, 255, 255, .9);
+}
+
+.baogaoleft .userInfo span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icon span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15px;
+    margin-left: 3px;
+}
+
+.icon .zan {
+    background: url(img/zan.png) no-repeat left 4px;
+}
+
+.icon .look {
+    background: url(img/reply.png) no-repeat left center;
+}
+
+.baogaoleft .userInfo .time {
+    color: #a3a3a3;
+}
+
+.baogaoleft .userInfo .name {
+    color: #fe695a;
+}
+
+.baogaoleft .userInfo .avt {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: url(img/tx.jpg) no-repeat;
+}
+
+.baogaoleft .click-look {
+    color: #a3a3a3;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+}
+
+.baogaoleft .more {
+
+    margin: 20px auto;
+    text-align: center;
+}
+
+.baogaoleft .more a {
+    color: #fe5341;
+    padding-left: 25px;
+    background: url(./img/more.png) no-repeat 0px 7px;
+}
+
+.baogaoright {
+    width: 270px;
+}
+
+.baogaoright .info h5 {
+    color: #474747;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.baogaoright .info .text {
+    color: #a3a3a3;
+    font-size: 14px;
+}
+
+.baogaoright .title {
+    position: relative;
+    font-size: 18px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.baogaoright .title:after {
+    background: #fe5341;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 25px;
+    left: 0;
+    top: 0;
+}
+
+.baogaoright .imgBox {
+    margin-top: 20px;
+}
+
+.baogaoright .info h5 {
+    font-size: 16px;
+    padding: 5px 0;
+}
