@@ -7,7 +7,6 @@
   <link href="css/themes.css" rel="stylesheet"/>
   <link href="css/style.css" rel="stylesheet"/>
   <script src="js/jquery.min.js"></script>
-
  </head>
  <body>
 	<!--头部-->
@@ -34,7 +33,6 @@
 			<h2 class="title">登录极果</h2>
 			<form class="regForm" id="regForm" name="my_f1" action="" method="post" onsubmit="return check(this);">
 				<p><input type="text" placeholder="请输入用户名" required="required"/></p>
-
 				<p><input type="password" style="width:100%" placeholder="请输入密码" required="required" name="psw1"/></p>
 				<p><button id="submit" class="lijidenglu">立即登录</button></p>
 			</form>
@@ -82,53 +80,13 @@
 					<dd><a href="mailto:CEO@jiguo.com">CEO邮箱：CEO@jiguo.com</a></dd>
 				</dl>
 			</div>
-			<p class="copy">© 2016 极果版权所有</p>
+			<p class="copy">© 2022 极果版权所有</p>
 		</section>
 	</footer>
  </body>
 </html>
 <script>
-	/**表单验证是否密码相同**/
-	function check(form){
-		var p1 = form.psw1;
-		var p2 = form.psw2;
-		if (p1.value != p2.value) {
-			p2.oninvalid();
-			return false;
-		}
-		return true;
-	}
-
-	window.onload = function() {
-		var p2 = document.forms["my_f1"].psw2;
-		p2.oninvalid = function() {
-			this.setCustomValidity("密码不一致，请重新输入");
-		}
-		p2.oninput = function() {
-			this.setCustomValidity("");
-		}
-
-	}
-
-	$(function(){
-		/**获取验证码 倒计时**/
-		var wait = 60;
-		function yzm(){
-			if(wait==0){
-				$(".getCode").text("获取验证码");
-				wait = 60;
-			}else{
-				wait--;
-				$(".getCode").text(wait+"秒后重新发送");
-				setTimeout(function(){yzm();},1000);
-			}
-		}
-		$(".getCode").click(function(){
-			yzm();
-		});
-	});
 	var submit_=document.getElementsByClassName('lijidenglu')[0];
-	// console.log(submit_)
 	var regForm_=document.getElementById('regForm');
 		submit_.onclick=function(){
 			regForm.setAttribute('action','./index.html')

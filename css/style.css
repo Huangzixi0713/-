@@ -385,6 +385,7 @@ nav .on a {
 .regForm input {
     background: #f7f7f7;
     color: #a3a3a3;
+    outline: none;
 }
 
 .regForm p.psw label {
