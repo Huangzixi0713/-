@@ -8,6 +8,17 @@
     width: 400px;
     float: right;
     margin-top: 35px;
+    animation: run .5s ease;
+}
+
+@keyframes run {
+    0% {
+        transform: translate(200px, -200px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
 }
 
 .focus .box h2 {
@@ -557,4 +568,142 @@
     color: #fe5341;
     padding-left: 25px;
     background: url(./img/more.png) no-repeat 0px 7px;
+}
+
+
+
+
+.backtop {
+    position: fixed;
+    left: 1221.5px;
+    top: 507px;
+    display: none;
+    background: url(img/back.png) no-repeat #e8e8e8 center center;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+
+}
+
+.xijiereport {
+    background: #f7f7f7;
+}
+
+.xijiereport .content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.xijiereport .content .top {
+    height: 50px;
+    line-height: 50px;
+    color: #a3a3a3;
+    font-size: 12px;
+}
+
+.xijiereport .content .top a {
+    color: #a3a3a3;
+}
+
+.xijiereport .content .xijie .left {
+    background-color: #fff;
+    width: 700px;
+
+}
+
+.xijiereport .content .xijie .left .lefttop {
+    padding: 20px;
+}
+
+.xijiereport .content .xijie .left .lefttop h1 {
+    font-size: 26px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.xijiereport .content .xijie .left .lefttop .picleft span:nth-of-type(1) {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: bottom;
+    background: url(./img/tx.jpg) no-repeat 0px 0px;
+}
+
+.xijiereport .content .xijie .left .lefttop .picleft span:nth-of-type(2) {
+    display: inline-block;
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.xijiereport .content .xijie .left .lefttop .picright {
+    color: #a3a3a3;
+    font-size: 12px;
+}
+
+.xijiereport .content .xijie .left .article {
+    font-size: 14px;
+    line-height: 23px;
+    padding: 19px 24px 20px;
+}
+
+.xijiereport .content .xijie .right {
+    width: 270px;
+}
+
+.xijiereport .content .xijie .right .box {
+    height: 108px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #ebeaea;
+    box-shadow: 0 1px 1px 1px #eee;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.xijiereport .content .xijie .right .box div:nth-of-type(1) {
+    border-right: 1px solid #ebeaea;
+    width: 50%;
+    height: 108px;
+    box-sizing: border-box;
+    text-align: center;
+    background: url(./img/xinRedo.png) no-repeat center 30px;
+
+}
+
+.xijiereport .content .xijie .right .box div:nth-of-type(1):hover {
+    background: url(./img/xinRedh.png) no-repeat center 30px;
+}
+
+.xijiereport .content .xijie .right .box div:nth-of-type(1):hover a {
+    color: #fe5431;
+}
+
+.xijiereport .content .xijie .right .box div:nth-of-type(1) a {
+    display: block;
+    margin-top: 60px;
+}
+
+.xijiereport .content .xijie .right .box div:nth-of-type(2) {
+    width: 50%;
+    height: 108px;
+    text-align: center;
+    background: url(./img/share_yj1.png) no-repeat center 30px;
+
+}
+
+.xijiereport .content .xijie .right .box div:nth-of-type(2):hover {
+    background: url(./img/shareh_yj1.png) no-repeat center 30px;
+
+}
+
+.xijiereport .content .xijie .right .box div:nth-of-type(2):hover a {
+    color: #fe5431;
+}
+
+.xijiereport .content .xijie .right .box div:nth-of-type(2) a {
+    display: block;
+    margin-top: 60px;
 }
