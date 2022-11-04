@@ -1283,3 +1283,7 @@ nav .on a {
     font-size: 16px;
     padding: 5px 0;
 }
+
+.about {
+    margin: 50px auto;
+}
