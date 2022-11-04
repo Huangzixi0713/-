@@ -34,12 +34,11 @@
 		<div class="box">
 			<h2>幻响小贝HiFi2.1音箱</h2>
 			<p class="label">
-				<span><b id="renshu">126</b> 人申请</span>
+				<span><b id="renshu">126</b> <b id="rensq" style="font-weight:normal">人申请</b> </span>
 				<span>￥599</span>
 				<span><b id="taishu">20</b> 台</span>
 			</p>
 			<p class="time">
-				<!-- 申请时间剩余：13天5小时37分钟 -->
 			</p>
 			<p class="btn">
 				<a href="#" id="lijisq">立即申请</a>
@@ -623,16 +622,16 @@
         var now_time = new Date();
 
         // 创建指定时间
-        var time = new Date(2022, 10, 11);
+        var go_time = new Date(2022, 10, 18);
 
         //时间差
-        var go_time = time - now_time;
+        var cha = go_time - now_time;
 
         //把毫秒转为天  时  分  秒退回
-        var day = Math.floor(go_time / 1000 / 60 / 60 / 24);
-        var hour = Math.floor(go_time / 1000 / 60 / 60 % 24);
-        var min = Math.floor(go_time / 1000 / 60 % 60);
-        var s = Math.floor(go_time / 1000 % 60);
+        var day = Math.floor(cha / 1000 / 60 / 60 / 24);
+        var hour = Math.floor(cha / 1000 / 60 / 60 % 24);
+        var min = Math.floor(cha / 1000 / 60 % 60);
+        var s = Math.floor(cha / 1000 % 60);
 
         document.getElementsByClassName('time')[0].innerHTML = '申请时间剩余' + day + '天' + hour + '时' + min + '分' + s + '秒';
     }
@@ -646,11 +645,14 @@
 		var taishu=document.getElementById('taishu');
 		var r=renshu.firstChild.nodeValue-0;
 		var t=taishu.firstChild.nodeValue-0;
+		var rensq=document.getElementById('rensq');
 		renshu.innerHTML=r+1;
 		taishu.innerHTML=t-1;
 		if(t==0){
 			alert('当前已售完');
 			taishu.innerHTML='0';
+			renshu.innerHTML='当前已';
+			rensq.innerHTML='售完';
 		}
 	}
            var back=document.getElementById('back');
