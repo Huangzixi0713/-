@@ -7,47 +7,6 @@
   <link href="css/themes.css" rel="stylesheet"/>
   <link href="css/style.css" rel="stylesheet"/>
   <script src="js/jquery.min.js"></script>
-  <script>
-	/**表单验证是否密码相同**/
-	function check(form){
-		var p1 = form.psw1;
-		var p2 = form.psw2;
-		if (p1.value != p2.value) {
-			p2.oninvalid();
-			return false;
-		}
-		return true;
-	}
-
-	window.onload = function() {
-		var p2 = document.forms["my_f1"].psw2;
-		p2.oninvalid = function() {
-			this.setCustomValidity("密码不一致，请重新输入");
-		}
-		p2.oninput = function() {
-			this.setCustomValidity("");
-		}
-
-	}
-
-	$(function(){
-		/**获取验证码 倒计时**/
-		var wait = 60;
-		function yzm(){
-			if(wait==0){
-				$(".getCode").text("获取验证码");
-				wait = 60;
-			}else{
-				wait--;
-				$(".getCode").text(wait+"秒后重新发送");
-				setTimeout(function(){yzm();},1000);
-			}
-		}
-		$(".getCode").click(function(){
-			yzm();
-		});
-	});
- </script>
  </head>
  <body>
 	<!--头部-->
@@ -58,21 +17,21 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="index.html">首页</a></li>
-					<li><a href="play/index.html">酷玩</a></li>
-					<li><a href="guid/index.html">导购</a></li>
-					<li><a href="use/index.html">试用</a></li>
-					<li><a href="report/index.html">报告</a></li>
+					<li><a href="./index.html">首页</a></li>
+					<li><a href="./kuwan3/zuixin.html">酷玩</a></li>
+					<li><a href="./daogou3/zuixin.html">导购</a></li>
+					<li><a href="./shiyong8/shenqing.html">试用</a></li>
+					<li><a href="./baogao2/zuixin.html">报告</a></li>
 				</ul>
 			</nav>
-			<a href="regist.html" class="login right">注册</a>
-			<a href="" class="search right">搜索</a>
+			<a href="./zhuce.html" class="login right">注册</a>
+			<a href="#" class="search right">搜索</a>
 		</div>
 	</header>
 	<section class="report-box regMain">
 		<div class="wrap regBox">
 			<h2 class="title">注册极果</h2>
-			<form class="regForm" name="my_f1" action="" method="post" onsubmit="return check(this);">
+			<form class="regForm" id="regForm" name="my_f1"  method="post" onsubmit="return check(this);">
 				<p><input type="text" placeholder="请输入登录手机号" pattern="^1[34578][0-9]{9}$" required="required" name="tel"/></p>
 
 				<p>
@@ -91,7 +50,7 @@
 
 				<p><input type="password" placeholder="确定新密码" required="required" name="psw2"/></p>
 				
-				<p><button id="submit">立即注册</button></p>
+				<p><button id="submit" class="lijizhuce">立即注册</button></p>
 			</form>
 		</div>
 	</section>
@@ -142,3 +101,51 @@
 	</footer>
  </body>
 </html>
+<script>
+	/**表单验证是否密码相同**/
+	function check(form){
+		var p1 = form.psw1;
+		var p2 = form.psw2;
+		if (p1.value != p2.value) {
+			p2.oninvalid();
+			return false;
+		}
+		return true;
+	}
+
+	window.onload = function() {
+		var p2 = document.forms["my_f1"].psw2;
+		p2.oninvalid = function() {
+			this.setCustomValidity("密码不一致，请重新输入");
+		}
+		p2.oninput = function() {
+			this.setCustomValidity("");
+		}
+
+	}
+
+	$(function(){
+		/**获取验证码 倒计时**/
+		var wait = 60;
+		function yzm(){
+			if(wait==0){
+				$(".getCode").text("获取验证码");
+				wait = 60;
+			}else{
+				wait--;
+				$(".getCode").text(wait+"秒后重新发送");
+				setTimeout(function(){yzm();},1000);
+			}
+		}
+		$(".getCode").click(function(){
+			yzm();
+		});
+	});
+	var submit_=document.getElementsByClassName('lijizhuce')[0];
+	console.log(submit_)
+	var regForm_=document.getElementById('regForm');
+		submit_.onclick=function(){
+			regForm.setAttribute('action','./denglu.html')
+		}
+
+ </script>
