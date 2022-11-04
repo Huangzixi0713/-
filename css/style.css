@@ -936,14 +936,14 @@ nav .on a {
 }
 
 .zuirelist ul li p {
+    height: 50px;
     padding: 10px 10px;
     font-size: 14px;
 }
 
 .zuirelist ul li div {
     height: 50px;
-    padding: 10px 10px;
-    background: url(./img/listbg.jpg) no-repeat 0px 45px;
+    background: url(./img/listbg.jpg) no-repeat 0px 32px;
 }
 
 .zuirelist ul li div .xin {
